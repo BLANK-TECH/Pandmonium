@@ -11,9 +11,7 @@ class Login extends Component {
         <RectanglesLogin />
         <div className="backg-img">
           <img src={logo} className="logo-app" alt="logo" />
-
           <h1 className="greeting-login">¡HOLA!</h1>
-
           <CodeForm />
         </div>
       </div>

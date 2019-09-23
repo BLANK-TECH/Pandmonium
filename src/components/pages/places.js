@@ -3,7 +3,7 @@ import Navbar from "../navbar";
 import GreenRectangle from "../green_rectangle";
 import FormNameNumber from "../number_name_form";
 import Bars from "../bars";
-import Tables from "../tables";
+import Tables from "../Tables";
 import BtnGreen from "../btn_green";
 import { Link } from "react-router-dom";
 

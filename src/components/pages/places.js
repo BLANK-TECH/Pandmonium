@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Navbar from "../navbar";
 import GreenRectangle from "../green_rectangle";
 import FormNameNumber from "../number_name_form";
-import Bars from "../bars";
+import Bars from "../Bars";
 import Tables from "../Tables";
 import BtnGreen from "../btn_green";
 import { Link } from "react-router-dom";

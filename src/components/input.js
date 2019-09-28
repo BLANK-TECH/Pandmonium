@@ -1,4 +1,9 @@
 import React, { Component } from "react";
+// state = {
+  // name: this.props.value
+// };
+
+// console.log(this.state.name);
 
 class Input extends Component {
   render() {

@@ -9,7 +9,8 @@ import { Link } from "react-router-dom";
 
 class Places extends Component {
   state = {
-    number: null
+    number: null,
+    name: null
   };
 
   changeTitle = (title, background) => {

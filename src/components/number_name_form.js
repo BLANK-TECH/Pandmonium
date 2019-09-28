@@ -4,6 +4,8 @@ import Input from "../components/input";
 import InputSpiner from "../components/input-spiner";
 
 class FormNameNumber extends Component {
+
+
   render() {
     return (
       <form className={this.props.classCSS}>

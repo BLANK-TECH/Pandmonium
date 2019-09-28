@@ -1,46 +1,13 @@
-
 import React, { Component } from "react";
-import burger from './ux_resources/ICONOS MENU/ICONO_HAMBURGUESA_MENU.png';
-import pizza from './ux_resources/ICONOS MENU/PIZZA_ICONO.png';
-import papatoes from './ux_resources/ICONOS MENU/ICONO_OTROS_PAPAS.png';
-import hotdog from './ux_resources/ICONOS MENU/HOT_DOG_MENU.png';
-import cake from './ux_resources/ICONOS MENU/ICONO_POSTREMENU.png';
-import salad from './ux_resources/ICONOS MENU/ICONO_ENSALADA_MENU.png';
-import icecream from './ux_resources/ICONOS MENU/ICONO_POSTRE_MENU.png';
-import frape from './ux_resources/ICONOS MENU/ICONO_MALTEADA_MENU.png';
 
-
-class Foodimages extends Component {
+class FoodBtn extends Component {
   render() {
-    return(
-      
-        <div className="imagenes-menu">
-        <img src={burger}
-        alt="burger" className="food"/>
-        <img src={pizza}
-        alt="pizza" className="food"/>
-        <img src={papatoes}
-        alt="papatoes" className="food"/>
-        <img src={hotdog}
-        alt="hotdog" className="food"/>
-        <img src={cake}
-        alt="cake" className="food"/>
-        <img src={salad}
-        alt="salad" className="food"/>
-        <img src={icecream}
-        alt="icecream" className="food"/>
-        <img src={frape}
-        alt="frape" className="food"/>
-        </div>
-      
-      ) 
-    }
+    return (
+      <button onClick={this.handleClick}>
+        <img src={this.props.image} alt={this.props.alt}></img>
+      </button>
+    );
   }
-//   const element = <Foodimages burger={burger} pizza={pizza} papatoes={papatoes} 
-//   hotdog={hotdog} cake={cake} salad ={salad} icecream={icecream} frape={frape} alt='menu'/>
-// // // const element = <Input placeholder="Ingresa tu código" />;
+}
 
-
-export default Foodimages ;
-
-  
+export default FoodBtn;

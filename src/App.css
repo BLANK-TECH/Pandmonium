@@ -134,7 +134,8 @@ p {
 
 .menu-ham {
   width: 65px;
-  left: 5vw;
+  left: 6vw;
+  top: 2vh;
   margin-top: 22px;
   position: absolute;
 }
@@ -240,135 +241,9 @@ p {
   font-size: 30px;
   font-weight: 700;
 }
+/* Bere MENÚ ---------------------------------------------------------*/
 
-@media only screen and (max-width: 768px) { /*No borrar*/
-  .navbar {/*No borrar*/
-    width: 100%;
-    height: 10vh;
-    text-align: center;
-    display: flex;
-    justify-items: center;
-    flex-direction: row;
-  }
-
-.logo-nav {/*No borrar*/
-  height: 7vh;
-  width: 7rem;
-  margin-left: 10rem;
-
-}
-.menu-ham {/*No borrar*/
-  height: 5vh;
-  display:flex;
-  width: 3rem;
-  margin-top: 0.3rem;
-}
-.imagenes-menu{/*No borrar*/
-  height: 10vh;
-  width: 30rem;
-  /* background-color: green; */
-  border-color: black;
-  align-items: center;
-  display: flex;
-  margin-top: 1rem;
-  margin-left: 1rem;
-  margin-right: 2.5rem; 
-  flex-wrap: wrap;
-  
-}
-.food{/*No borrar*/
-  height: 4.8vh;
-  margin-left: 3rem;
-  margin-top: 0.6rem;
-
-
-}
-.tag-food{/*No borrar*/
-  width: 11rem;
-  height: 2.7vh;
-  background-color: white;
-  border-radius: 5px;
-  border-color: #CDCDCD;
-  border-style: solid;
-  margin-top: 2rem;
-  color: #0d0d0d;
-  font-family: Arial, Helvetica, sans-serif;
-  align-items: center;
-  margin:0.5rem 0.5rem 0.5rem 0.5rem;
-  
-}
-p{/*No borrar*/
-  font-size: 0.9rem;
-  margin:0rem 0.2rem 0.5rem 2.8rem;
-}
-.All-menu{/*No borrar*/
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-items: center;
-  width: 40rem;
-  height: 80vh;
-  
-  
-}
-.menu-draws{/*No borrar*/
-  height: 10vh;
-}
-.tag-ham{/*No borrar*/
-  height: 15vh;
-  margin-left: 1rem;
- 
-}
-.menu-buy{/*No borrar*/
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 0.1rem;
-}
-.input-buy{/*No borrar*/
-  width: 2rem;
-  height: 2.7vh;
-  border-radius: 5px;
-  border-color: #CDCDCD;
-  border-style: solid;
-  margin-top: 0.5rem;
-  margin-left: 0rem;
-  color: #0d0d0d;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-
-.input-foodbuy, .btn-numbuy, .btn-numbuy-white, .menu{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-.btn-black, .btn-white{
-  width: 2rem;
-  height: 2.7vh;
-  border-radius: 50px;
-  background-color: #0d0d0d;
-  margin-top: 0.5rem;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.8rem;
-
-}
-.btn-white{
-  background-color: white;
-  color: #0d0d0d;
-  border-style: solid;
-  border-color: #0d0d0d;
-  margin-left: 0.7rem;
-}
-.text-menu{
-  margin-top: 3rem;
-  margin-left: 11rem;
-  display: flex;
-  flex-direction: row;
-}
-
-}
-
+/* ----------------------------------------------------------------------------------- */
 .people-name-number label {
   margin-right: 20px;
   font-size: 30px;
@@ -498,4 +373,172 @@ td img {
   border-radius: 20px;
   border: transparent;
   outline: 0px;
+}
+
+/* SECCIÓN MENÚ */
+.menu-draws {
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu-draws button {
+  width: 160px;
+  height: 160px;
+  padding: 30px;
+  margin: 6px 35px;
+  border: transparent;
+  border-radius: 25px;
+  background: transparent;
+  outline: 0px;
+}
+
+.menu-draws button:hover {
+  background-color: #39bf4d;
+}
+
+.menu-draws img {
+  width: 100%;
+  height: auto;
+}
+
+.menu-buy {
+  width: 90vw;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3px;
+  text-align: center;
+}
+
+.menu-buy div {
+  width: inherit;
+  height: auto;
+}
+
+.tag-menu-product {
+  width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #0d0d0d;
+  margin-bottom: 20px;
+}
+
+.tag-menu-product th,
+td {
+  border-color: transparent;
+}
+
+.tag-menu-product thead tr th {
+  font-size: 30px;
+  text-align: center;
+}
+
+.tag-menu-product tbody tr th {
+  width: 236px;
+  font-size: 30px;
+}
+
+.btn-inc-dec {
+  border: solid black 2px;
+  background-color: black;
+  width: 45px;
+  height: 45px;
+  font-size: 40px;
+  border-radius: 50px;
+  font-weight: 900;
+  color: aliceblue;
+  line-height: 40px;
+  outline: 0px;
+}
+
+.increase {
+  background-color: white;
+  color: black;
+}
+
+.pizza-input {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: solid 5px gray;
+  text-align: center;
+  margin-left: 13px;
+  margin-right: 13px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.comments {
+  width: 800px;
+  height: 200px;
+  border-radius: 25px;
+  background-color: rgb(209, 207, 207);
+  border: transparent;
+  color: gray;
+  text-align: center;
+  padding: 20px;
+  font-size: 40px;
+}
+/* ________________________MECHE MENÚ________________________________ */
+/* Individual item */
+.bm-item {
+  display: inline-block;
+
+  /* Our sidebar item styling */
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #39bf4d;
+  transition: color 0.2s;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Change color on hover */
+.bm-item:hover {
+  color: #39bf4d;
+}
+
+/* The rest copied directly from react-burger-menu docs */
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 56px;
+  height: 50px;
+  left: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #e2e4eb;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #030303;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
 }

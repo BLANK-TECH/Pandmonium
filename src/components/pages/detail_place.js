@@ -11,7 +11,7 @@ class DetailPlace extends Component {
       <div className="detail_screen">
         <Navbar />
 
-        <GreenRectangle classCSS="rectangle-tabar-detail" place="MESA 2" />
+        <GreenRectangle classCSS="rectangle-tabar-detail" />
 
         <FormNameNumber classCSS="people-number-detail" />
 

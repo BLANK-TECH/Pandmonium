@@ -1,0 +1,40 @@
+{
+  "menus": [
+    {
+      "product": "Burger",
+      "options": [
+        "MALICIA",
+        "SOBERBIA",
+        "GULA",
+        "ALMA EN PENA",
+        "ENCARNACIÓN",
+        "BANANA LIMBO"
+      ],
+      "size": ["INDIVIDUAL", "COMBO"]
+    },
+    {
+      "product": "Pizza",
+      "options": [
+        "CHANEQUE",
+        "SODOMA",
+        "LUJURIA",
+        "ÁNGEL CAÍDO",
+        "PURGATORIO",
+        "TIKI HAWAIANA",
+        "MARGARITA"
+      ],
+      "size": ["M", "G", "F"]
+    },
+    {
+      "product": "Complements",
+      "options": [
+        "PAPAS GAJO",
+        "ALITAS DIABLO",
+        "VUELVELA HAWAIANA",
+        "QUESO TIPO AMERICANO",
+        "QUESO DE PAPA"
+      ],
+      "size": [""]
+    }
+  ]
+}

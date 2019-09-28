@@ -1,51 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta name="Pandmonium" content="Aplicación que facilita el pedidio de ordenes.">
+    <meta
+      name="Pandmonium"
+      content="Aplicación que facilita el pedidio de ordenes."
+    />
+    <meta name="theme-color" content="#317EFB" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
-
-    <meta name="theme-color" content="#000000" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="/manifest.json" />
     <title>Pan D'monium</title>
 
-    <!-- update the version number as needed-->
-    <script defer src="/__/firebase/6.6.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
+    <!-- <script defer src="/__/firebase/6.6.1/firebase-app.js"></script> -->
+    <!-- include only the Firebase features as you need
     <script defer src="/__/firebase/6.6.1/firebase-auth.js"></script>
     <script defer src="/__/firebase/6.6.1/firebase-database.js"></script>
     <script defer src="/__/firebase/6.6.1/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/6.6.1/firebase-storage.js"></script>
+    <script defer src="/__/firebase/6.6.1/firebase-storage.js"></script> -->
     <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
-    <link rel="apple-touch-icon" href="180.png">
-   
+    <!-- <script defer src="/__/firebase/init.js"></script> -->
+
+    <link rel="apple-touch-icon" href="196.png" />
   </head>
   <body>
-    <div id="message">
-      <!-- <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a> -->
-    </div>
-    <!-- <p id="load">Firebase SDK Loading&hellip;</p> -->
     <div id="root"></div>
+
     <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-          navigator.serviceWorker.register('worker.js').then(function(registration) {
-            console.log('Worker registration successful', registration.scope);
-          }, function(err) {
-            console.log('Worker registration failed', err);
-          }).catch(function(err) {
-            console.log(err);
-          });
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function() {
+          navigator.serviceWorker
+            .register("worker.js")
+            .then(
+              function(registration) {
+                console.log(
+                  "Worker registration successful",
+                  registration.scope
+                );
+              },
+              function(err) {
+                console.log("Worker registration failed", err);
+              }
+            )
+            .catch(function(err) {
+              console.log(err);
+            });
         });
       } else {
-        console.log('Service Worker is not supported by browser.');
+        console.log("Service Worker is not supported by browser.");
       }
     </script>
-    
   </body>
 </html>

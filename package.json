@@ -2,19 +2,26 @@
   "name": "pandmonium",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
+    "express": "^4.17.1",
     "firebase": "^7.0.0",
+    "gh-pages": "^2.1.1",
     "react": "^16.9.0",
     "react-burger-menu": "^2.6.11",
     "react-dom": "^16.9.0",
+    "react-numeric-input": "^2.2.3",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.1"
   },
   "scripts": {
+    "lint": "eslint.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,6 +39,7 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^6.4.0"
+    "eslint": "^6.4.0",
+    "eslint-plugin-react": "^7.14.3"
   }
 }

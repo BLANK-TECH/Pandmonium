@@ -31,7 +31,9 @@ p {
 
 .login-screen {
   text-align: center;
+  width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 
 .backg-img {
@@ -86,24 +88,37 @@ p {
 /* Estilos saludo login */
 .greeting-login {
   margin-top: 150px;
+  font-weight: 700;
 }
 
-/* Formulario login */
+.unregistrer-msn {
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  color: crimson;
+  padding: 10px;
+}
+
+/* Formulario login */
 .input-btn-form {
   margin-top: 150px;
 }
 
-/* Input login */
+/* Input login */
 .input-login {
   background-color: rgba(105, 105, 105, 0.315);
   width: 60vw;
   height: 90px;
   font-size: 50px;
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
   border: transparent;
   text-align: center;
-  margin-top: 80px;
+  margin-top: 30px;
   outline: 0px;
 }
 
@@ -121,8 +136,10 @@ p {
 
 /* ESTILOS DE PANTALLAS PLACES */
 .places-screen {
+  width: 100vw;
   height: 100vh;
   text-align: center;
+  overflow: hidden;
 }
 
 .navbar {
@@ -190,7 +207,7 @@ p {
 
 .rectangle-tabar-selection {
   width: 100%;
-  height: auto;
+  height: 77px;
   background: #39bf4dad;
   margin-top: 100px;
   padding: 16px 40px;
@@ -204,6 +221,16 @@ p {
 }
 
 /* Sección de registro de lugar y numero de personas */
+.label-detail {
+  font-size: 35px;
+  font-weight: 800;
+  color: #373a47;
+}
+.data-detail {
+  font-size: 35px;
+  font-weight: 400;
+  color: #0d0d0d;
+}
 .people-name-number {
   width: 100%;
   height: auto;
@@ -241,9 +268,6 @@ p {
   font-size: 30px;
   font-weight: 700;
 }
-/* Bere MENÚ ---------------------------------------------------------*/
-
-/* ----------------------------------------------------------------------------------- */
 .people-name-number label {
   margin-right: 20px;
   font-size: 30px;
@@ -251,9 +275,14 @@ p {
 }
 
 /* ESTILOS PANTALLA DE DETALLE */
+.detail_screen {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
 .rectangle-tabar-detail {
   width: 100%;
-  height: auto;
+  height: 77px;
   background: #39bf4dad;
   padding: 10px;
   padding: 16px 40px;
@@ -267,11 +296,14 @@ p {
 }
 
 .people-number-detail {
-  width: 100%;
-  height: auto;
+  width: 90vw;
+  height: 150px;
   text-align: end;
-  padding-right: 80px;
+  /* padding-right: 80px; */
   padding-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: scroll;
 }
 
 /* Tabla de detalle de consumo de comensal */
@@ -282,6 +314,13 @@ p {
   font-weight: 700;
 }
 
+.table-detail-container {
+  width: 90vw;
+  height: 65vh;
+  overflow: scroll;
+  margin-left: auto;
+  margin-right: auto;
+}
 .table-detail-guest {
   width: 90vw;
   height: auto;
@@ -376,6 +415,11 @@ td img {
 }
 
 /* SECCIÓN MENÚ */
+.menu {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
 .menu-draws {
   width: 90vw;
   margin-left: auto;
@@ -404,11 +448,12 @@ td img {
 
 .menu-buy {
   width: 90vw;
-  height: auto;
+  height: 800px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 3px;
   text-align: center;
+  overflow: scroll;
 }
 
 .menu-buy div {
@@ -483,52 +528,49 @@ td {
 /* ________________________MECHE MENÚ________________________________ */
 /* Individual item */
 .bm-item {
-  display: inline-block;
-
-  /* Our sidebar item styling */
+  display: block;
+  text-align: right;
+  padding: 10px 0px 10px 0px;
   text-decoration: none;
-  margin-bottom: 10px;
-  color: #39bf4d;
+  color: white;
   transition: color 0.2s;
-  font-size: 30px;
+  font-size: 37px;
   font-weight: bold;
+  outline: 0px;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-/* Change color on hover */
-.bm-item:hover {
-  color: #39bf4d;
-}
-
-/* The rest copied directly from react-burger-menu docs */
 
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
-  width: 56px;
-  height: 50px;
-  left: 36px;
-  top: 36px;
+  width: 70px;
+  height: 60px;
+  left: 60px;
+  top: 60px;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #373a47;
+  background: #39bf4d;
+  border-radius: 20px;
 }
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
   height: 24px;
   width: 24px;
+  display: none;
 }
 
 /* Color/shape of close button cross */
 .bm-cross {
   background: #bdc3c7;
+  display: none;
 }
 
 /* General sidebar styles */
 .bm-menu {
-  background: #e2e4eb;
+  background: #39bf4d;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
@@ -541,4 +583,14 @@ td {
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
+}
+
+.bm-item hr {
+  height: 5px;
+  background-color: white;
+  border: transparent;
+}
+
+.input-btn-form span {
+  font-size: 40px;
 }

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 import Navbar from "../navbar";
-import FormNameNumber from "../number_name_form";
 import AccountPerGuest from "../account_guest";
 import GreenRectangle from "../green_rectangle";
 
@@ -13,10 +12,21 @@ class DetailPlace extends Component {
 
         <GreenRectangle classCSS="rectangle-tabar-detail" />
 
-        <FormNameNumber classCSS="people-number-detail" />
-
-        <AccountPerGuest />
-        <AccountPerGuest />
+        <div className="people-number-detail">
+          <span className="label-detail">No. Personas </span>
+          <span className="data-detail"></span>
+          <br></br>
+          <span className="label-detail">Nombre </span>
+          <span className="data-detail"></span>
+        </div>
+        <div className="table-detail-container">
+          <AccountPerGuest />
+          <AccountPerGuest />
+          <AccountPerGuest />
+          <AccountPerGuest />
+          <AccountPerGuest />
+          <AccountPerGuest />
+        </div>
       </div>
     );
   }

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Navbar from "../navbar";
-
 import Burger from "../ux_resources/ICONOS MENU/ICONO_HAMBURGUESA_MENU.png";
 import Pizza from "../ux_resources/ICONOS MENU/PIZZA_ICONO.png";
 import Papatoes from "../ux_resources/ICONOS MENU/ICONOS_PAPAS.png";
@@ -9,10 +8,8 @@ import Cake from "../ux_resources/ICONOS MENU/ICONO_CAKE.png";
 import Salad from "../ux_resources/ICONOS MENU/ICONO_SALAD.png";
 import IceCream from "../ux_resources/ICONOS MENU/ICON_ICECREAM.png";
 import Frappe from "../ux_resources/ICONOS MENU/ICON_MILKSHAKE.png";
-
 import BtnGreen from "../btn_green";
 import PizzaMenu from "../product_selection/pizza";
-
 import FoodBtn from "../menuimages";
 
 class Menu extends Component {

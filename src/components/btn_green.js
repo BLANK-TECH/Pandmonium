@@ -4,7 +4,6 @@ import { withRouter } from "react-router-dom";
 
 class BtnGreen extends Component {
   
-
   onClick = e =>{
     e.preventDefault();
     const {history} = this.props

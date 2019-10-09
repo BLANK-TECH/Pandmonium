@@ -9,7 +9,7 @@ class BtnSaveOrder extends Component {
         super(props);
         this.state = {
           valid:null,
-         
+          id:null
         }
     }
   
@@ -25,7 +25,7 @@ class BtnSaveOrder extends Component {
       let status = true
       
         db.collection('pedidos').add({
-            pedidos:"Pandemonium",
+          pedidos:"Pandemonium",
         date: strDate,
         dateHour: strHour,
         name:localStorage.getItem('name'),
@@ -36,7 +36,11 @@ class BtnSaveOrder extends Component {
       })
         .then((docRef) => {
             console.log("Document written with ID: ", docRef.id);
-            this.setState({valid:true})    
+            localStorage.setItem('id',JSON.stringify(docRef.id))
+            this.setState({
+              valid:true,
+              id:docRef.id
+          })    
         })
         .catch((error) => {
             console.error("Error adding document: ", error);

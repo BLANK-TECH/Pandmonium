@@ -8,7 +8,8 @@ class AccountList extends Component {
   constructor(props){
     super(props);
       this.state = {
-        table:[]
+        table:[],
+        id:null
     }
   }
 
@@ -23,7 +24,8 @@ class AccountList extends Component {
          onSnapshot.forEach((doc) => {    
          table.push(doc.data().table)
         this.setState({
-          table:table
+          table:table,
+          id:doc.id
         })                 
        })
     })

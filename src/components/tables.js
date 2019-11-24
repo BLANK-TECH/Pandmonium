@@ -7,7 +7,7 @@ class Tables extends Component {
   changeColor = () => {
     if (this.state.background == null) {
       this.setState({
-        background: "#39bf4d"
+        background: "#a8c82f"
       });
     } else {
       this.setState({
@@ -25,7 +25,7 @@ class Tables extends Component {
   render() {
     return (
       <button
-        className="table-btn"
+        className={this.props.CSSclass}
         onClick={this.handleChange}
         style={{ backgroundColor: this.state.background }}
       >

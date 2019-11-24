@@ -8,16 +8,33 @@ export default props => {
     <Menu {...props}>
       <Link className="menu-item" to="/Menu">
         Menú
+        <br />
+        <br />
+        <hr></hr>
       </Link>
-      <Link className="menu-item" to="/DetailPlace">
-        Asignación de lugar
+      <Link className="menu-item" to="/Places">
+        Abrir orden
+        <br />
+        <br />
+        <hr></hr>
       </Link>
-      {/* <a className="menu-item" href="/AccountList"> */}
-      {/* <Link className="menu-item" to="/AccountList">
-        Cuentas Abiertas
-      </Link>  */}
-      {/* </a> */}
-      
+      <Link className="menu-item" to="/AccountList">
+        Cuentas abiertas
+        <br />
+        <br />
+        <hr></hr>
+      </Link>
+      <Link className="menu-item" to="/AccountList">
+        Ventas del día
+        <br />
+        <br />
+        <hr></hr>
+      </Link>
+      <Link className="menu-item close" to="/">
+        Cerrar sesión
+        <br />
+        <br />
+      </Link>
     </Menu>
   );
 };

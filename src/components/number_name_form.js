@@ -1,30 +1,52 @@
 import React, { Component } from "react";
 import Input from "../components/input";
-import InputSpiner from "../components/input-spiner";
+//import InputSpiner from "../components/input-spiner";
 import BtnGreen from "../components/btn_green";
-
 
 class FormNameNumber extends Component {
   state = {
-    name: ''
+    num: 0,
+    name: ""
   };
-  
-  onChange = e =>{
+
+  onChangeName = e => {
     this.setState({
-      name: e.target.value
-    })
-  }
+      name: e.target.value,
+      number: e.target.value
+    });
+  };
+
+  onChange = e => {
+    this.setState({
+      num: e.target.value
+    });
+  };
 
   render() {
     return (
       <form className={this.props.classCSS}>
-        <label>Personas</label>
-        <InputSpiner />
+        <label>No. Personas</label>
+        <Input
+          classCSS="input-spiner"
+          typeInput="number"
+          onChange={this.onChange}
+        />
         <br></br>
         <label>Nombre del cliente</label>
-        <Input classCSS="input-name" typeInput="text" onChange={this.onChange}/>
-        <BtnGreen btntext="ABRIR MESA" name ={this.state.name}/>
-      </form> 
+        <Input
+          classCSS="input-name"
+          typeInput="text"
+          onChange={this.onChangeName}
+        />
+        <br></br>
+        <BtnGreen
+          btntext="ABRIR MESA"
+          name={this.state.name}
+          num={this.state.num}
+          nametable={this.props.nametable}
+          ruta={"/Menu"}
+        />
+      </form>
     );
   }
 }

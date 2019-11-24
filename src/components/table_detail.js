@@ -8,18 +8,11 @@ class TableDetail extends Component {
       <table>
         <thead>
           <tr>
-            <th>CONCEPTO</th>
-            <th>PRECIO</th>
-            <th>COMENTARIOS</th>
+            <th>Concepto Detalle Cantidad</th>
           </tr>
         </thead>
         <tbody>
-          <AddRow
-            conceptText="MALICIA"
-            costQuantity="$65.00"
-            commentText="Sin verdura"
-          />
-          <AddRow conceptText="DELIRIUM" costQuantity="$50.00" commentText="" />
+          <AddRow completeArray={this.props.completeArray} />
         </tbody>
       </table>
     );

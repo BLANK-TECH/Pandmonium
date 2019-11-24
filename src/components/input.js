@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 class Input extends Component {
-  
   render() {
     return (
       <input
@@ -9,6 +8,7 @@ class Input extends Component {
         className={this.props.classCSS}
         type={this.props.typeInput}
         onChange={this.props.onChange}
+        required
       ></input>
     );
   }

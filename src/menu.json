@@ -1,0 +1,105 @@
+[
+  {
+    "id": "0",
+    "platillo": "hamburguesa",
+    "tipo": [
+      { "name": "Seleccionar", "price": ["", ""] },
+      { "name": "Malicia", "price": ["50", "65"] },
+      { "name": "Soberbia", "price": ["50", "65"] },
+      { "name": "Gula", "price": ["50", "65"] },
+      { "name": "Alma en pena", "price": ["65", "80"] },
+      { "name": "Encarnación", "price": ["65", "80"] },
+      { "name": "Banana limbo", "price": ["65", "80"] }
+    ],
+    "opcion": ["Seleccionar", "Sencillo", "Combo"]
+  },
+  {
+    "id": "1",
+    "platillo": "pizza",
+    "tipo": [
+      { "name": "Seleccionar", "price": ["", "", ""] },
+      { "name": "Chaneque", "price": ["150", "180", "210"] },
+      { "name": "Sodoma", "price": ["130", "160", "190"] },
+      { "name": "Lujuria", "price": ["150", "180", "210"] },
+      { "name": "Ángel caído", "price": ["130", "160", "190"] },
+      { "name": "Purgatorio", "price": ["150", "180", "210"] },
+      { "name": "Tiki-hawaiana", "price": ["140", "170", "200"] },
+      { "name": "Margarita", "price": ["110", "140", "170"] }
+    ],
+    "opcion": ["Seleccionar", "Mediana", "Grande", "Familiar"]
+  },
+  {
+    "id": "2",
+    "platillo": "extras",
+    "tipo": [
+      { "name": "Seleccionar", "price": [""] },
+      { "name": "Papas gajo", "price": ["50"] },
+      { "name": "Alitas diablo", "price": ["60"] },
+      { "name": "Vuélvela hawaina", "price": ["20"] },
+      { "name": "Queso tipo americano", "price": ["15"] },
+      { "name": "Queso de papa", "price": ["10"] }
+    ],
+    "opcion": ["NA", "-"]
+  },
+  {
+    "id": "3",
+    "platillo": "jochos",
+    "tipo": [
+      { "name": "Seleccionar", "price": ["", ""] },
+      { "name": "Jochoslaw", "price": ["50", "65"] },
+      { "name": "Xoloescuintle", "price": ["65", "80"] },
+      { "name": "Pit bull", "price": ["65", "80"] },
+      { "name": "Hachiko", "price": ["70", "85"] },
+      { "name": "Pastor alemán", "price": ["80", "95"] }
+    ],
+    "opcion": ["Seleccionar", "Sencillo", "Combo"]
+  },
+  {
+    "id": "4",
+    "platillo": "postres",
+    "tipo": [
+      { "name": "Seleccionar", "price": [""] },
+      { "name": "Mousse", "price": ["30"] },
+      { "name": "Vegatina de sabores", "price": ["25"] },
+      { "name": "Hell girl", "price": ["50"] },
+      { "name": "Pan dulce", "price": ["15"] }
+    ],
+    "opcion": ["NA", "-"]
+  },
+  {
+    "id": "5",
+    "platillo": "ensaladas",
+    "tipo": [
+      { "name": "Seleccionar", "price": [""] },
+      { "name": "Delírium", "price": ["50"] },
+      { "name": "Paraíso perdido", "price": ["70"] }
+    ],
+    "opcion": ["NA", "-"]
+  },
+  {
+    "id": "6",
+    "platillo": "malteadas",
+    "tipo": [
+      { "name": "Seleccionar", "price": [""] },
+      { "name": "Fresa", "price": ["50"] },
+      { "name": "Chocomenta", "price": ["50"] },
+      { "name": "Mazapán", "price": ["50"] },
+      { "name": "Temporada", "price": ["50"] }
+    ],
+    "opcion": ["NA", "-"]
+  },
+  {
+    "id": "7",
+    "platillo": "sodas",
+    "tipo": [
+      { "name": "Seleccionar", "price": [""] },
+      { "name": "Piña & coco", "price": ["45"] },
+      { "name": "Limón & jícama", "price": ["45"] },
+      { "name": "Maracuyá", "price": ["45"] },
+      { "name": "Fresa & albahaca", "price": ["45"] },
+      { "name": "Mango", "price": ["45"] },
+      { "name": "Manzana verde", "price": ["45"] }
+    ],
+    "opcion": ["NA", "-"]
+  }
+]

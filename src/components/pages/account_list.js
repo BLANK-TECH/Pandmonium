@@ -1,17 +1,46 @@
 import React, { Component } from "react";
-
+import { Link } from "react-router-dom";
 import Navbar from "../navbar";
-import GreenRectangle from "../green_rectangle";
+import TablesRectangle from "../tables_rectangle.js";
+import * as firebase from 'firebase';
 
 class AccountList extends Component {
+  constructor(props){
+    super(props);
+      this.state = {
+        table:[],
+        id:null
+    }
+  }
+
+  componentWillMount = () => {
+    const db = firebase.firestore(); 
+     const pedidosRef = db.collection('pedidos');   
+     pedidosRef.where('pendiente', '==', true )   
+     .get()    
+    .then((onSnapshot) => {  
+      
+      let {table}=this.state;  
+         onSnapshot.forEach((doc) => {    
+         table.push(doc.data().table)
+        this.setState({
+          table:table,
+          id:doc.id
+        })                 
+       })
+    })
+}
+  
   render() {
     return (
+      
       <div className="places-screen">
         <Navbar />
-        <GreenRectangle classCSS="rectangle-account" place="MESA 2" />
-        <GreenRectangle classCSS="rectangle-account" place="MESA 3" />
-        <GreenRectangle classCSS="rectangle-account" place="BARRA 5" />
-        <GreenRectangle classCSS="rectangle-account" place="MESA 1" />
+        <div className="open-account">
+          <Link to="DetailPlace">
+            <TablesRectangle classCSS="rectangle-account" table={this.state.table}/>
+          </Link> 
+        </div>
       </div>
     );
   }

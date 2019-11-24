@@ -1,14 +1,16 @@
 import React, { Component } from "react";
-import Input from "../components/input";
-import BtnGreen from "../components/btn_green";
+import Pagar from "../components/pagar";
 
 class FormTotal extends Component {
   render() {
     return (
       <form className={this.props.classCSS}>
         <label>TOTAL $</label>
-        <Input classCSS="total-input" typeInput="number" />
-        <BtnGreen btntext="PAGAR" />
+        <span className="total-input">
+          110
+          <output name="x" htmlFor="a b"></output>
+        </span>
+        <Pagar btntext="PAGAR" ruta={'/Places'}/>
       </form>
     );
   }

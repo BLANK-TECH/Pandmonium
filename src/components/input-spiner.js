@@ -7,8 +7,8 @@ class InputSpiner extends Component {
         type="number"
         name="quantity"
         min="1"
-        max="2"
         className="input-spiner"
+        required
       ></input>
     );
   }

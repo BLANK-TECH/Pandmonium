@@ -861,14 +861,17 @@ table {
     height: 57px;
     text-align: end;
     padding-top: 4px;
+    font-weight: 800;
   }
 
   .label-detail {
     font-size: 19px;
+    font-weight: 800;
   }
 
   .data-detail {
     font-size: 19px;
+    font-weight: 800;
   }
 
   .total {

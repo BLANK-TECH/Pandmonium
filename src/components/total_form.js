@@ -10,7 +10,7 @@ class FormTotal extends Component {
           110
           <output name="x" htmlFor="a b"></output>
         </span>
-        <Pagar btntext="PAGAR" ruta={'/AccountList'}/>
+        <Pagar btntext="PAGAR" ruta={'/Places'}/>
       </form>
     );
   }

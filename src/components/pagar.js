@@ -41,6 +41,8 @@ class Pagar extends Component {
         pendiente: true
       });
       history.push(this.props.ruta);
+      console.log(docRef);
+      
     })
     .catch((error) => {
       console.error("Error adding document: ", error);
